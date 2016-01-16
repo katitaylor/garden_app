@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  data_planted: MyString
+  date_ended: MyString
+  plant_again?: false
+
+two:
+  data_planted: MyString
+  date_ended: MyString
+  plant_again?: false
