@@ -1,95 +1,55 @@
 <!DOCTYPE html>
-<html class="full" lang="en">
-<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
-
-
+<html lang="en">
 <head>
-  <link rel="shortcut icon" type="image/x-icon" href="Vegetable-Cabbage-128.png" />
-  <title>Garden Geeks</title>
-
-<!-- / <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-#  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-#  <%= csrf_meta_tags %> -->
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!--Google Font -->
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Lobster|PT+Sans|News+Cycle' rel='stylesheet' type='text/css'>
-
-
-    <!-- Custom CSS -->
-    <link href="css/full.css" rel="stylesheet">
-
-
-<!-- <head>
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <title>Garden Geeks</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head> -->
+  <meta charset="UTF-8">
+  <title>Garden Geek</title>
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                </button>
-                <a class="navbar-brand id="GG-logo" href="#">
-                  <img src="Vegetable-Cabbage-128.png" />
-                </a>
-            </div>
-            <div>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="">My Profile</a></li>
-                    <li><a href="">My Gardens</a></li>
-                    <li><a href="">My Plants</a</li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
 
-    <!-- Put your page content here! -->
-    <div class="jumbotron" col-med-8 col-med-offset-2>
-        <div col-med-12 id="GG-title">
-            <h1>Garden Geeks</h1>
-        </div>
-    </div>
 
-    <div class="views">
-      <br>
-      <br>
-    <!-- <%= yield %> -->
+
+ <!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!--Google Font -->
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif|Lobster|PT+Sans|News+Cycle' rel='stylesheet' type='text/css'>
+
+
+<!-- Custom CSS -->
+<link href="css/full.css" rel="stylesheet">
+
+<div class="container">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img src="Vegetable-Cabbage-48.png">
+      <a class="navbar-brand" href="#">Garden Geek</a>
     </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Gardens</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+<img src="http://www.daviddarling.info/images/mountain.jpg">
+<nav class="navbar navbar-default footer">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img src="Vegetable-Cabbage-48.png">
+      <a class="navbar-brand" href="#">Garden Geek</a>
+    </div>
+  </div>
+</nav>
+
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-</body>
-
 </html>
