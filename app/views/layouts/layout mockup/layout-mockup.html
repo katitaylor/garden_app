@@ -6,35 +6,27 @@
 </head>
 <body>
 
-
-
-
- <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
-
-<!--Google Font -->
 <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Lobster|PT+Sans|News+Cycle' rel='stylesheet' type='text/css'>
-
-
-<!-- Custom CSS -->
 <link href="css/full.css" rel="stylesheet">
 
 <div class="container">
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
       <img src="Vegetable-Cabbage-48.png">
-      <a class="navbar-brand" href="#">Garden Geek</a>
+        <a class="navbar-brand" href="#">Garden Geek</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Gardens</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
     </div>
-    <ul class="nav navbar-nav">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Profile</a></li>
-      <li><a href="#">Gardens</a></li>
-      <li><a href="#">About Us</a></li>
-    </ul>
-  </div>
-</nav>
+  </nav>
 </div>
+<%= yield %>
 <img src="http://www.daviddarling.info/images/mountain.jpg">
 <nav class="navbar navbar-default footer">
   <div class="container-fluid">
@@ -45,11 +37,6 @@
   </div>
 </nav>
 
-
-
-    <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 </html>
