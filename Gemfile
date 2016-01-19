@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'faker'
+gem 'faker',                '1.6.1'
 gem 'devise'
 
 
