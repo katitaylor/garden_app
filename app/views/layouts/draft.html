@@ -1,15 +1,4 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <link rel="shortcut icon" type="image/x-icon" href="/Vegetable-Cabbage-32 (green).png" />
-  <title>Garden Geeks</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -37,16 +26,7 @@
     </div>
   </nav>
 </div>
-
- <% if notice %>
-   <p class="alert alert-success"><%= notice %></p>
- <% end %>
- <% if alert %>
-   <p class="alert alert-danger"><%= alert %></p>
- <% end %>
-
 <%= yield %>
-
 <img src="http://www.daviddarling.info/images/mountain.jpg">
 <nav class="navbar navbar-default footer">
   <div class="container-fluid">
@@ -57,12 +37,6 @@
   </div>
 </nav>
 
-
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-</html>
-
-
-
-</body>
 </html>
