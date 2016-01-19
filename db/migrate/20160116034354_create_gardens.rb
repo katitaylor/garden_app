@@ -1,7 +1,9 @@
 class CreateGardens < ActiveRecord::Migration
   def change
     create_table :gardens do |t|
-      t.string :name null: false
+      t.references :garden, index: true
+
+      t.string :name, null: false
       t.string :address
       t.string :city
       t.integer :zip
@@ -11,7 +13,7 @@ class CreateGardens < ActiveRecord::Migration
       t.timestamps
     end
 
-    add_foreign_key :gardens, :users
+    # add_foreign_key :gardens, :users
 
   end
 end
