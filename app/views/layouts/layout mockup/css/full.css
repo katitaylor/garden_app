@@ -1,0 +1,40 @@
+/*!
+ * Start Bootstrap - Full HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    margin-top: 50px;
+    /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.navbar {
+  background-color: #2A7221;
+  color: white: ;
+  margin: 0 0 0 0;
+}
+
+body {
+  background-color: white;
+}
+
+#GG-logo {
+  color: white;
+  padding-left: 1em;
+}
+
+#GG-title {
+  font-family: 'Droid Serif', serif;
+  font-size: 300px;
+  font-weight: bold;
+  color: #119822;
+  font-style: italic;
+  text-align: center;
+  margin-top: 300px;
+}
