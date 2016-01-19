@@ -8,7 +8,6 @@ class CreateUsers < ActiveRecord::Migration
       t.string :city
       t.integer :zip, null: false
       t.string :username, null: false
-      t.string :email, null: false, index: true
       t.string :avatar_url
       t.text :about_me
 
