@@ -6,6 +6,9 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+plants = Plant.create([{name_of_plant: "Rose"}])
+plants = Plant.create([{name_of_plant: "Red rose"}])
+
 User.create!(first_name: "Jane",
               last_name: "Doe",
               email: "example@railstutorial.org",
