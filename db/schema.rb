@@ -28,7 +28,6 @@ ActiveRecord::Schema.define(version: 20160119213927) do
   add_index "comments", ["plant_id"], name: "index_comments_on_plant_id", using: :btree
 
   create_table "gardens", force: :cascade do |t|
-    t.integer  "garden_id"
     t.string   "name",         null: false
     t.string   "address"
     t.string   "city"
@@ -40,7 +39,6 @@ ActiveRecord::Schema.define(version: 20160119213927) do
     t.integer  "user_id"
   end
 
-  add_index "gardens", ["garden_id"], name: "index_gardens_on_garden_id", using: :btree
   add_index "gardens", ["user_id"], name: "index_gardens_on_user_id", using: :btree
 
   create_table "plant_types", force: :cascade do |t|

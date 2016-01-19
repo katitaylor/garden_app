@@ -6,8 +6,12 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-plants = Plant.create([{name_of_plant: "Rose"}])
-plants = Plant.create([{name_of_plant: "Red rose"}])
+plants = Plant.create(name_of_plant: "Rose")
+plants = Plant.create(name_of_plant: "Red rose")
+
+plant_type = PlantType.create(plant_name: "Rose", scientific_name: "Rosa rubiginosa")
+plant_type = PlantType.create(plant_name: "Blue Rose", scientific_name: "Rosa bugawuba")
+
 
 User.create!(first_name: "Jane",
               last_name: "Doe",
