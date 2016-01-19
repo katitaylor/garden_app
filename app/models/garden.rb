@@ -1,4 +1,5 @@
 class Garden < ActiveRecord::Base
+	belongs_to :user
   validates :name,  presence: true, length: { maximum: 50 }
   validates :address, length: { maximum: 50 }
   validates :city,  length: { maximum: 50 }
