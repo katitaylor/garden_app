@@ -1,11 +1,16 @@
 class CreatePlants < ActiveRecord::Migration
   def change
     create_table :plants do |t|
+      t.string :name_of_plant
       t.string :date_planted
       t.string :date_ended
       t.boolean :plant_again?
 
-      t.timestamps null: false
+      t.timestamps
     end
+
+    add_foreign_key :plants, :gardens
+    add_foreign_key :plants, :plant_types
+
   end
 end
