@@ -13,15 +13,6 @@ plant_type = PlantType.create(plant_name: "Rose", scientific_name: "Rosa rubigin
 plant_type = PlantType.create(plant_name: "Blue Rose", scientific_name: "Rosa bugawuba")
 
 
-User.create!(first_name: "Jane",
-              last_name: "Doe",
-              email: "example@railstutorial.org",
-              username: "exampleuser",
-              zip: 12345,
-              password: "password",
-              password_confirmation: "password")
-
-
 40.times do |n|
   first_name = Faker::Name.first_name
   last_name = Faker::Name.last_name
@@ -31,6 +22,7 @@ User.create!(first_name: "Jane",
   zip = Faker::Address.zip
   username = Faker::Internet.user_name
   avatar = Faker::Avatar.image
+  about_me = Faker::Lorem.paragraph
   User.create!(first_name: first_name,
                 last_name: last_name,
                 city: city,
@@ -39,6 +31,7 @@ User.create!(first_name: "Jane",
                 password_confirmation: password,
                 zip: zip,
   							username: username,
+                about_me: about_me,
                 avatar: avatar)
 
 end
