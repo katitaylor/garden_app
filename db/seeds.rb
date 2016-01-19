@@ -25,20 +25,20 @@ User.create!(first_name: "Jane",
 40.times do |n|
   first_name = Faker::Name.first_name
   last_name = Faker::Name.last_name
-  email = "example-#{n+1}@railstutorial.org"
-  password = "password"
-  zip = 12345
-  username = "iamauser-#{n+1}"
+  city = Faker::Address.city
+  email = Faker::Internet.email
+  password = Faker::Internet.password(8, 20)
+  zip = Faker::Address.zip
+  username = Faker::Internet.user_name
+  avatar = Faker::Avatar.image
   User.create!(first_name: first_name,
                 last_name: last_name,
+                city: city,
                 email: email,
                 password: password,
                 password_confirmation: password,
                 zip: zip,
-  							username: username)
+  							username: username,
+                avatar: avatar)
 
 end
-
-
-#name { Faker::Name.first_name }
-#  surname { Faker::Name.last_name }
