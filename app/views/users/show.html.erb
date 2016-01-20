@@ -7,41 +7,26 @@
 
 
 <!-- Grid -->
-  <div class="container">
+<div class="container">
   <div class="row">
 
     <div class="span12">
       <div class="hero-unit">
-    <div id="myCarousel" class="carousel">
-          <div class="carousel-inner">
-            <div class="active item"><img src="/images/1.png" /></div>
-        <div class="item"><img src="./images/2.png" /></div>
-        <div class="item"><img src="./images/3.png" /></div>
-          </div>
+		    <div class="col-md-6 offset-col-md-3">
+			    <div id="myCarousel" class="carousel">
+	          <div class="carousel-inner">
+	            <div class="active item"><%= image_tag("sample-garden.jpg") %></div>
+			        <div class="item"><%= image_tag("sample-garden2.jpg") %></div>
+			        <div class="item"><%= image_tag("sample-garden3.jpg") %></div>
+	          </div>
 
-      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-        </div>
-      </div>
+		      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+		      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+	        </div>
+	      </div>
 
-      <div class="row">
-        <div class="span4">
-           <a class="btn btn-large">Play</a>
-       <p>Play games created with Fluxware.</p>
-
-        </div>
-
-    <div class="span4">
-      <a class="btn btn-large">Learn</a>
-      <p>Learn how to create games and game assets</p>
-    </div>
-
-    <div class="span4">
-          <a class="btn btn-large">Build</a>
-
-      <p>Use the Fluxware tools to create game.</p>
-        </div>
-      </div>
+	      </div>
+	    </div>
     </div>
   </div>
-  </div>
+</div>
