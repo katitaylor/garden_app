@@ -8,7 +8,8 @@
 <body>
 
 <!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
-<link href='https://fonts.googleapis.com/css?family=Droid+Serif|Lobster|PT+Sans|News+Cycle' rel='stylesheet' type='text/css'>
+<!-- <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Lobster|PT+Sans|News+Cycle' rel='stylesheet' type='text/css'> -->
+<%= stylesheet_link_tag    'application', 'https://fonts.googleapis.com/css?family=Droid+Serif|Lobster|PT+Sans|News+Cycle' %>
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 <%= csrf_meta_tags %>
@@ -17,21 +18,19 @@
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-      <!-- <img src="Vegetable-Cabbage-48.png"> -->
-      <%= image_tag("Vegetable-Cabbage-48.png") %>
-
-
+        <%= image_tag("Vegetable-Cabbage-48.png") %>
         <a class="navbar-brand" href="#">Garden Geek</a>
       </div>
       <ul class="nav navbar-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Gardens</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/users/show">Profile</a></li>
+        <li><a href="/gardens/show">Gardens</a></li>
         <li><a href="#">About Us</a></li>
       </ul>
     </div>
   </nav>
 </div>
+<br>
 
  <% if notice %>
    <p class="alert alert-success"><%= notice %></p>
@@ -42,11 +41,10 @@
 
 <%= yield %>
 
-
+<br>
 <nav class="navbar navbar-default footer">
   <div class="container-fluid">
     <div class="navbar-header">
-      <!-- <img src="Vegetable-Cabbage-48.png"> -->
       <%= image_tag("Vegetable-Cabbage-48.png") %>
       <a class="navbar-brand" href="#">Garden Geek</a>
     </div>
