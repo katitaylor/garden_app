@@ -4,22 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Garden Geek</title>
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Lobster|PT+Sans|News+Cycle' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', 'https://fonts.googleapis.com/css?family=Droid+Serif|Lobster|PT+Sans|News+Cycle' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
-<<<<<<< HEAD
-<!-- <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Lobster|PT+Sans|News+Cycle' rel='stylesheet' type='text/css'> -->
-<%= stylesheet_link_tag    'application', 'https://fonts.googleapis.com/css?family=Droid+Serif|Lobster|PT+Sans|News+Cycle' %>
-<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-<%= csrf_meta_tags %>
-=======
->>>>>>> master
 
 
 <div class="container-fluid">
@@ -38,20 +28,7 @@
     </div>
   </nav>
 </div>
-<<<<<<< HEAD
-<br>
 
- <% if notice %>
-   <p class="alert alert-success"><%= notice %></p>
- <% end %>
- <% if alert %>
-   <p class="alert alert-danger"><%= alert %></p>
- <% end %>
-
-<%= yield %>
-
-<br>
-=======
 <div>
    
   <% if notice %>
@@ -62,11 +39,12 @@
   <% end %>
 
   <div class="container">
+    <br><br>
     <%= yield %>
   </div>
 
 </div>
->>>>>>> master
+
 <nav class="navbar navbar-default footer">
   <div class="container-fluid">
     <div class="navbar-header">
