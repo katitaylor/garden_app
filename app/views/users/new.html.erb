@@ -2,27 +2,29 @@
 <h1>New User</h1>
 
 <%= render 'form' %>
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= form_for(@user) do |f| %>
-      <%= f.label :username %>
-      <%= f.text_field :username %>
-
-      <%= f.label :email %>
-      <%= f.email_field :email %>
-
-      <%= f.label :password %>
-      <%= f.password_field :password %>
-
-      <%= f.label :password_confirmation, "Confirmation" %>
-      <%= f.password_field :password_confirmation %>
-
-      <%= f.submit "Create my account", class: "btn btn-primary" %>
-    <% end %>
-  </div>
-</div>
 
 
 <%= link_to 'Back', users_path %>
 
+
+<div class="input-group">
+  <div class="column col-md-6 col-md-offset-3">
+    <div class="well col-md-12 form-well" id="create-user-form"">
+      <div class="col-md-10 col-md-offset-1 form-title" id="create-user-form-title">
+        <h2>New Garden Geek Account</h2>
+      </div>
+      <input type="text" class="well col-md-10 col-md-offset-1" value="first_name"></input>
+      <input type="text" class="well col-md-10 col-md-offset-1" value="last_name"></input>
+      <input type="text" class="well col-md-10 col-md-offset-1" value="email"></input>
+      <input type="text" class="well col-md-10 col-md-offset-1" value="password"></input>
+      <input type="text" class="well col-md-10 col-md-offset-1" value="password_confirm"></input>
+      <input type="text" class="btn col-md-10 col-md-offset-1" value="Sign Up">
+    </div>
+  </div>
+</div>
+
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+</div>
 
