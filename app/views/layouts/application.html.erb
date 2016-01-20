@@ -4,16 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Garden Geek</title>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Lobster|PT+Sans|News+Cycle' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
 </head>
 <body>
 
 <!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
-<link href='https://fonts.googleapis.com/css?family=Droid+Serif|Lobster|PT+Sans|News+Cycle' rel='stylesheet' type='text/css'>
-<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-<%= csrf_meta_tags %>
 
-<div class="container">
+
+<div class="container-fluid">
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -39,9 +40,9 @@
  <% if alert %>
    <p class="alert alert-danger"><%= alert %></p>
  <% end %>
-
+<div class="container">
 <%= yield %>
-
+</div>
 
 <nav class="navbar navbar-default footer">
   <div class="container-fluid">
