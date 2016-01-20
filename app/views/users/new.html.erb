@@ -1,30 +1,21 @@
-
-<h1>New User</h1>
-
-<%= render 'form' %>
-
-
-<%= link_to 'Back', users_path %>
-
-
-<div class="input-group">
-  <div class="column col-md-6 col-md-offset-3">
-    <div class="well col-md-12 form-well" id="create-user-form"">
-      <div class="col-md-10 col-md-offset-1 form-title" id="create-user-form-title">
-        <h2>New Garden Geek Account</h2>
-      </div>
-      <input type="text" class="well col-md-10 col-md-offset-1" value="first_name"></input>
-      <input type="text" class="well col-md-10 col-md-offset-1" value="last_name"></input>
-      <input type="text" class="well col-md-10 col-md-offset-1" value="email"></input>
-      <input type="text" class="well col-md-10 col-md-offset-1" value="password"></input>
-      <input type="text" class="well col-md-10 col-md-offset-1" value="password_confirm"></input>
-      <input type="text" class="btn col-md-10 col-md-offset-1" value="Sign Up">
+<div class="column col-md-6 col-md-offset-3 form-div">
+  <div class="row col-md-12">
+    <div class="col-md-12 form-title">
+      <h2>Create New Account</h2>
     </div>
   </div>
-</div>
 
-<div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+  <div class="well col-md-12 form-well" id="new-user-form">
+    <%= bootstrap_form_for(@user) do |f| %>
+      <%= f.text_field :username %>
+      <%= f.email_field :email %>
+      <%= f.password_field :password %>
+      <%= f.password_field :password_confirmation %>
+      <div class="row col-md-12">
+        <div class="col-md-12 form-button" id="sign_up">
+          <%= f.submit "Sign Up" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
-
