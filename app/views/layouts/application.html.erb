@@ -32,17 +32,17 @@
     </div>
   </nav>
 </div>
+<div>
+   <% if notice %>
+     <p class="alert alert-success"><%= notice %></p>
+   <% end %>
+   <% if alert %>
+     <p class="alert alert-danger"><%= alert %></p>
+   <% end %>
 
- <% if notice %>
-   <p class="alert alert-success"><%= notice %></p>
- <% end %>
- <% if alert %>
-   <p class="alert alert-danger"><%= alert %></p>
- <% end %>
+  <%= yield %>
 
-<%= yield %>
-
-
+</div>
 <nav class="navbar navbar-default footer">
   <div class="container-fluid">
     <div class="navbar-header">
