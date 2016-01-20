@@ -1,9 +1,6 @@
-/*!
- * Start Bootstrap - Full HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
 
+@import "bootstrap-sprockets";
+@import "bootstrap";
 @import url('http://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
@@ -33,7 +30,7 @@ body {
 }
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
-
+;
 .navbar {
   background-color: #2A7221;
   margin: 0px;
@@ -51,4 +48,4 @@ body {
 
 
 #GG-title {
-
+}

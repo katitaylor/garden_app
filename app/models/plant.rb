@@ -1,4 +1,4 @@
-class Plant < ActiveRecord::Base
+cclass Plant < ActiveRecord::Base
 	belongs_to :user
 
   validates :name_of_plant, length: { maximum: 50 }
