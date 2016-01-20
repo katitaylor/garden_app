@@ -40,4 +40,19 @@
 	    </div>
     </div>
   </div>
+  <div class="row">
+		<div class="well col-md-12 form-well" id="new-garden-form">
+	    <%= bootstrap_form_for(@garden) do |f| %>
+	      <%= f.text_field :name %>
+	      <%= f.text_field :address %>
+	      <%= f.text_field :city %>
+	      <%= f.number_field :zip %>
+	      <div class="row col-md-12">
+	        <div class="col-md-12 form-button" id="create_garden">
+	          <%= f.submit "Create Garden" %>
+	        </div>
+	      </div>
+	    <% end %>
+	  </div>
+  </div>
 </div>
