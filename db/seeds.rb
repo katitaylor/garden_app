@@ -17,6 +17,7 @@ plant_type = PlantType.create(plant_name: "Blue Rose", scientific_name: "Rosa bu
   first_name = Faker::Name.first_name
   last_name = Faker::Name.last_name
   city = Faker::Address.city
+  address = Faker::Address.street_address
   email = Faker::Internet.email
   password = Faker::Internet.password(8, 20)
   zip = Faker::Address.zip
@@ -32,6 +33,6 @@ plant_type = PlantType.create(plant_name: "Blue Rose", scientific_name: "Rosa bu
                 zip: zip,
   							username: username,
                 about_me: about_me,
-                avatar: avatar)
+                avatar_url: avatar)
 
 end
