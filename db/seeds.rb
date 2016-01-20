@@ -5,12 +5,17 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Comment.destroy_all
+Plant.destroy_all
+PlantType.destroy_all
+User.destroy_all
 
-plants = Plant.create(name_of_plant: "Rose")
-plants = Plant.create(name_of_plant: "Red rose")
+comments = Comment.create(body: "This is the best plant ever!", plant_id: 16, plant_type_id: 1)
+plants = Plant.create(name_of_plant: "Test Plant")
+plants = Plant.create(name_of_plant: "Test Plant 2")
 
-plant_type = PlantType.create(plant_name: "Rose", scientific_name: "Rosa rubiginosa")
-plant_type = PlantType.create(plant_name: "Blue Rose", scientific_name: "Rosa bugawuba")
+plant_type = PlantType.create(plant_name: "Rose", scientific_name: "Rosa rubiginosa" plant_type_id: 1)
+plant_type = PlantType.create(plant_name: "Blue Rose", scientific_name: "Rosa bugawuba" plant_type_id: 2)
 
 
 40.times do |n|

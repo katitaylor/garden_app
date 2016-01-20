@@ -1,10 +1,6 @@
-
-@import "bootstrap-sprockets";
-@import "bootstrap";
 @import url('http://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
-
     /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
@@ -30,7 +26,7 @@ body {
 }
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
-;
+
 .navbar {
   background-color: #2A7221;
   margin: 0px;
@@ -49,3 +45,28 @@ body {
 
 #GG-title {
 }
+
+// CSS FOR FORMS //
+
+.form-well {
+  background-color: #64A857;
+  margin-bottom: 20%
+}
+
+.form-title {
+  color: #9D8420;
+  text-align: center;
+  margin: 5%;
+}
+
+.form-button {
+  text-align: center;
+  color: #9D8420;
+  font-size: 2m;
+}
+
+.form-div {
+  margin-top: 6%;
+  margin-bottom: 10%;
+}
+
