@@ -1,27 +1,23 @@
 
-<h1>New User</h1>
-
+<!--
+Commenting out this native rails content
 <%= render 'form' %>
 
-<%= link_to 'Back', users_path %>
+ <%= link_to 'Back', users_path %>
+-->
 
-<div class="input-group">
-  <div class="column col-md-6 col-md-offset-3">
-    <div class="well col-md-12 form-well" id="create-user-form"">
-      <div class="col-md-10 col-md-offset-1 form-title" id="create-user-form-title">
-        <h2>New Garden Geek Account</h2>
+<div class="column col-md-6 col-md-offset-3">
+    <div class="well col-md-12 form-well" id="new-user-form">
+      <div class="form-title">
+        <h2>Create New Account</h2>
       </div>
-      <input type="text" class="well col-md-10 col-md-offset-1" value="first_name"></input>
-      <input type="text" class="well col-md-10 col-md-offset-1" value="last_name"></input>
-      <input type="text" class="well col-md-10 col-md-offset-1" value="email"></input>
-      <input type="text" class="well col-md-10 col-md-offset-1" value="password"></input>
-      <input type="text" class="well col-md-10 col-md-offset-1" value="password_confirm"></input>
-      <input type="text" class="btn col-md-10 col-md-offset-1" value="Sign Up">
-    </div>
+      <%= bootstrap_form_for(@user) do |f| %>
+        <%= f.text_field :username %>
+        <%= f.email_field :email %>
+        <%= f.password_field :password %>
+        <%= f.password_field :password_confirmation %>
+        <%= f.submit "Eat Fruit" %>
+      <% end %>
   </div>
 </div>
 
-<div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-</div>
