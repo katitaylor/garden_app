@@ -2,8 +2,8 @@
 
 <p id="notice"><%= notice %></p>
 
-<p><%= @plant_types.plant_name %></p>
-<p><%= @plant_types.scientific_name %></p>
+<p><%= @plant.name_of_plant %></p>
+<p><%= @plant.created_at %></p>
 <p><%= @comments.body %></p>
 
 <%= link_to 'Edit', edit_plant_path(@plant) %> |

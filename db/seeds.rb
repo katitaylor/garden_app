@@ -10,12 +10,12 @@ Plant.destroy_all
 PlantType.destroy_all
 User.destroy_all
 
-comments = Comment.create(body: "This is the best plant ever!", plant_id: 16)
+comments = Comment.create(body: "This is the best plant ever!")
 plants = Plant.create(name_of_plant: "Test Plant")
 plants = Plant.create(name_of_plant: "Test Plant 2")
 
-plant_type = PlantType.create(plant_name: "Rose", scientific_name: "Rosa rubiginosa" plant_type_id: 1)
-plant_type = PlantType.create(plant_name: "Blue Rose", scientific_name: "Rosa bugawuba" plant_type_id: 2)
+plant_type = PlantType.create(plant_name: "Rose", scientific_name: "Rosa rubiginosa")
+plant_type = PlantType.create(plant_name: "Blue Rose", scientific_name: "Rosa bugawuba")
 
 
 40.times do |n|

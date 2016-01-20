@@ -10,8 +10,8 @@ class PlantsController < ApplicationController
   # GET /plants/1
   # GET /plants/1.json
   def show
-    @plant_types = PlantType.find(params[:id])
-    @comments = Comment.find(params[:id])
+    @plant = Plant.find(params[:id])
+    @comments = Comment.find(5)
   end
 
   # GET /plants/new
