@@ -1,9 +1,6 @@
-/*!
- * Start Bootstrap - Full HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
 
+@import "bootstrap-sprockets";
+@import "bootstrap";
 @import url('http://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
@@ -11,14 +8,7 @@ body {
     /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
-.footer {
-   position:fixed;
-   left:0px;
-   bottom:0px;
-   height:30px;
-   width:100%;
-   background:#999;
-}
+
 
 .navbar-default .navbar-nav>li>a {
   color:white;
@@ -40,7 +30,7 @@ body {
 }
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
-
+;
 .navbar {
   background-color: #2A7221;
   margin: 0px;
@@ -58,4 +48,4 @@ body {
 
 
 #GG-title {
-
+}
