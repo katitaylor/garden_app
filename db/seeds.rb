@@ -10,7 +10,7 @@ Plant.destroy_all
 PlantType.destroy_all
 User.destroy_all
 
-comments = Comment.create(body: "This is the best plant ever!", plant_id: 16, plant_type_id: 1)
+comments = Comment.create(body: "This is the best plant ever!", plant_id: 16)
 plants = Plant.create(name_of_plant: "Test Plant")
 plants = Plant.create(name_of_plant: "Test Plant 2")
 
