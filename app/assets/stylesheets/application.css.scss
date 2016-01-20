@@ -11,9 +11,8 @@
  * file per style scope.
  *
  *= require_tree .
- *= require bootstrap
- *= require bootstrap-sprockets
- *= require full
- *= require rails_bootstrap_forms
+ *= require 'bootstrap.min'
+ *= require 'full'
+ *= require 'rails_bootstrap_forms'
  *= require_self
  */
