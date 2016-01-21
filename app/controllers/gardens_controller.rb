@@ -10,6 +10,7 @@ class GardensController < ApplicationController
   # GET /gardens/1
   # GET /gardens/1.json
   def show
+
   end
 
   # GET /gardens/new

@@ -6,10 +6,6 @@
 
 @import url('http://fonts.googleapis.com/css?family=Open+Sans');
 
-body {
-
-    /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-}
 
 .footer {
    position:fixed;
@@ -25,11 +21,13 @@ body {
 
 }
 
+
+
 .content_title {
     font-family: 'Droid Serif', serif;
     font-size: 300px;
     font-weight: bold;
-    color: #119822;
+    color: #2A7221;
     text-align: center;
   }
 
@@ -42,7 +40,7 @@ body {
   text-align: center;
 }
 
-/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg)*/
 
 .navbar {
   background-color: #2A7221;
@@ -61,6 +59,4 @@ body {
 .log_in {
   text-align: center;
 }
-
-#GG-title {
 
