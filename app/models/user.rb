@@ -10,7 +10,7 @@
   validates :city,  length: { maximum: 50 }
   validates :zip, length: { is: 5 }, allow_blank: true
 
-  validates_presence_of :username
+  # validates_presence_of :username
   # validates_uniqueness_of :username, case_sensitive: false
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
