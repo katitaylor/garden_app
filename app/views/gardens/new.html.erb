@@ -1,5 +1,45 @@
-<h1>New Garden</h1>
-
+<!--
 <%= render 'form' %>
 
 <%= link_to 'Back', gardens_path %>
+-->
+
+
+
+
+  <div class="column col-md-6 col-md-offset-3 form-div">
+
+    <div class="row col-md-12">
+      <div class="col-md-12 form-title">
+        <h2>Add A New Garden to Your Collection</h2>
+      </div>
+    </div>
+
+    <div class="well col-md-12 form-well" id="new-garden-form">
+      <%= bootstrap_form_for(@user) do |f| %>
+        <%= f.text_field :name, label: "Name your new garden"%>
+        <%= f.email_field :address "Address where garden is located" %>
+        <%= f.text_field :city, label: "City where garden is located" %>
+        <%= f.integer_field :zip, label: "Zip where garden is located" %>
+        <%= f.datetime_field :date_started, label: "Garden start date" %>
+        <div class="row col-md-12">
+          <div class="col-md-12 form-button" id="create-garden-button">
+            <%= f.submit "Create Garden" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+  </div>
+
+
+<!-- t.string   "name",         null: false
+    t.string   "address"
+    t.string   "city"
+    t.integer  "zip"
+    t.string   "date_started"
+    t.string   "date_ended"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+ -->

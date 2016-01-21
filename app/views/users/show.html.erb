@@ -4,12 +4,12 @@
 	<div class="row">
 		<div class="col-md-3">
 			<div>
-				<%= image_tag(@user.avatar_url, :id => "avatar") %>
+				<%= image_tag(current_user.avatar_url, :id => "avatar") %>
 			</div>
 		</div>
 		<div class="col-md-6">
-			<h1><%= @user.first_name %>'s Gardens</h1>
-			<p>About Me: <%= @user.about_me %></p>
+			<h1><%= current_user.first_name %>'s Gardens</h1>
+			<p>About Me: <%= current_user.about_me %></p>
 		</div>
 		<div class="col-md-3">
 			<button class="btn">Add New Garden</button>
@@ -31,11 +31,10 @@
 			        <div class="item"><%= image_tag("sample-garden3.jpg") %></div>
 	          </div>
 
-		      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-		      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-	        </div>
-	      </div>
-
+			      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+			      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+		        </div>
+		      </div>
 	      </div>
 	    </div>
     </div>
