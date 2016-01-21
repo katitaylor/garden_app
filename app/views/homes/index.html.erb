@@ -4,10 +4,13 @@
   </div>
 </div>
 
-<h1>This is the HOMEPAGE!</h1>
-<div class="container content_container">
-  <span><button type="new_user"><%= link_to 'New User', new_user_path %></button></span>
-  <span><button type="login">Login</button>
-</div>
+<div class="log_in">
+<h1>Welcome to Garden Geek <%= @user %></h1>
+  <div class="container content_container">
+    <!-- <span><button type="new_user"><%= link_to 'New User', new_user_path %></button></span>
+    <span><button type="login">Login</button></span>
+   -->
 
-<p id="notice"><%= notice %></p>
+  <p id="notice"><%= notice %></p>
+  </div>
+</div>

@@ -38,6 +38,10 @@ body {
   text-align:center;
 }
 
+.container content_container{
+  text-align: center;
+}
+
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
 
 .navbar {
@@ -54,7 +58,9 @@ body {
   background-color: white;
 }
 
-
+.log_in {
+  text-align: center;
+}
 
 #GG-title {
 
