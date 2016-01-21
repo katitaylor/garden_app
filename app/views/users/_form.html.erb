@@ -1,26 +1,19 @@
-<div class="well col-md-12 form-well" id="new-user-form">
-    <%= bootstrap_form_for(@user) do |f| %>
-      
-      <% if @user.errors.any? %>
-        <div id="error_explanation">
-          <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
 
-          <ul>
-          <% @user.errors.full_messages.each do |message| %>
-            <li><%= message %></li>
-          <% end %>
-          </ul>
-        </div>
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
       <% end %>
+      </ul>
+    </div>
+  <% end %>
 
-      <%= f.text_field :username %>
-      <%= f.email_field :email %>
-      <%= f.password_field :password %>
-      <%= f.password_field :password_confirmation %>
-      <div class="row col-md-12">
-        <div class="col-md-12 form-button" id="sign_up">
-          <%= f.submit "Sign Up" %>
-        </div>
-      </div>
-    <% end %>
+  <div class="actions">
+    <%= f.submit %>
   </div>
+<% end %>
+
+    <p> Hello World</p>
