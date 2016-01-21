@@ -6,7 +6,7 @@ gem 'bootstrap-sass',       '3.2.0.0'
 gem 'bootstrap_form'
 gem 'jquery-turbolinks'
 
-ruby '2.0.0'
+ruby '2.2.3'
 
 gem 'rails_12factor'
 
