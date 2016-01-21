@@ -1,16 +1,28 @@
 <div class="container content_title">
   <div class="jumbotron">
-    <h1>Garden Geek</h1>
+    <h1 class="title">Garden Geek</h1>
   </div>
 </div>
 
 <div class="log_in">
-<h1>Welcome to Garden Geek <%= @user %></h1>
+<h1 class="home_intro">Jump in and get your hands <span class="dirty">dirty!</span></h1>
   <div class="container content_container">
-    <!-- <span><button type="new_user"><%= link_to 'New User', new_user_path %></button></span>
-    <span><button type="login">Login</button></span>
-   -->
+  <br>
 
+
+  <button type="button" class="btn btn-primary btn-lg"><%= link_to 'Login', new_user_session_path %></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button type="button" class="btn btn-primary btn-lg"><%= link_to 'Sign Up', new_user_registration_path %></button>
+
+<!--   <%= button_to 'Sign Up', new_user_registration_path %> -->
+
+  <!-- <form method="post" action="/articles/new" class="button_to">
+  <input value="New" type="submit" />
+  </form> -->
+
+
+
+
+<br><br>
   <p id="notice"><%= notice %></p>
   </div>
 </div>

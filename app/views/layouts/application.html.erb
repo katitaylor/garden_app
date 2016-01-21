@@ -19,7 +19,7 @@
       <div id="navbar">
         <ul class="nav navbar-nav">
           <li><%= link_to 'Home', root_path %></li>
-          <li><%= link_to 'My Gardens', 'gardens_path' %></li>
+          <li><%= link_to 'My Gardens', user_path(current_user.id) %></li>
           <li><%= link_to 'About Us', 'about_us_path' %></li>
         </ul>
         <ul class="nav navbar-nav pull-right">
