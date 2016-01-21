@@ -1,7 +1,10 @@
 class RegistrationsController < Devise::RegistrationsController
+  def update
+  end
+
   protected
 
-  def after_sign_up_path_for(resource)
-    'homes/index' # Or :prefix_to_your_route
-  end
+  def after_inactive_sign_up_path_for(resource)
+  	'/home/index'
+  end 
 end
