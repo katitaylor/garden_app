@@ -65,7 +65,7 @@ body {
 }
 
 label.required:after {
-  content:" *";
-  color: red;
+  content:" *  required field";
+  color: #931F1D;
 }
 
