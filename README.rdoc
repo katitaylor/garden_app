@@ -1,11 +1,19 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Garden Geek :: Garden tracking application
 
 Things you may want to cover:
 
-* Ruby version
+
+* Link to ERD:
+
+https://drive.google.com/file/d/0B9VPtgc4eQJJZnJVNXVHSDF1YjA/view?usp=sharing
+
+* Ruby version  ruby 2.2.3p173
+
+
+
+
 
 * System dependencies
 
@@ -20,6 +28,8 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+
+Heroku platform services
 
 * ...
 
