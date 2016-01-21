@@ -70,3 +70,8 @@ body {
   margin-bottom: 10%;
 }
 
+label.required:after {
+  content:" *";
+  color: red;
+}
+
