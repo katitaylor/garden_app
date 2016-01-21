@@ -71,7 +71,7 @@ body {
 }
 
 label.required:after {
-  content:" *";
-  color: red;
+  content:" *  required";
+  color: #931F1D;
 }
 
