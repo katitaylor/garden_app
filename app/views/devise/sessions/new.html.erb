@@ -1,3 +1,17 @@
+<div class="container content_title">
+  <div class="jumbotron">
+    <h1 class="title">Garden Geek</h1>
+  </div>
+</div>
+
+<!-- <div class="container content_container">
+  <span><button type="new_user"><%= link_to 'New User', new_user_path %></button></span>
+  <span><button type="login">Login</button>
+</div> -->
+
+<p id="notice"><%= notice %></p>
+
+<div class="log_in">
 <h2>Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -24,3 +38,6 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+</div>
+
