@@ -1,26 +1,12 @@
-<div class="row">
-  <div class="well col-md-12 form-well" id="new-garden-form">
-    <%= bootstrap_form_for(@garden) do |f| %>
-      <% if @garden.errors.any? %>
-        <div id="error_explanation">
-          <h2><%= pluralize(@garden.errors.count, "error") %> prohibited this garden from being saved:</h2>
-
-          <ul>
-          <% @garden.errors.full_messages.each do |message| %>
-            <li><%= message %></li>
-          <% end %>
-          </ul>
-        </div>
-      <% end %>
-      <%= f.text_field :name %>
-      <%= f.text_field :address %>
-      <%= f.text_field :city %>
-      <%= f.number_field :zip %>
-      <div class="row col-md-12">
-        <div class="col-md-12 form-button" id="create_garden">
-          <%= f.submit "Create Garden" %>
-        </div>
-      </div>
-    <% end %>
+<%= bootstrap_form_for(@garden) do |f| %>
+  <%= f.text_field :name, label: "Name your new garden"%>
+  <%= f.text_field :address, label: "Address where garden is located" %>
+  <%= f.text_field :city, label: "City where garden is located" %>
+  <%= f.number_field :zip, label: "Zip where garden is located" %>
+  <%= f.text_field :date_started, label: "Garden start date" %>
+  <div class="row col-md-12">
+    <div class="col-md-12 form-button" id="create-garden-button">
+      <%= f.submit "Create Garden" %>
+    </div>
   </div>
-</div>
+<% end %>

@@ -29,7 +29,7 @@ class GardensController < ApplicationController
 
     respond_to do |format|
       if @garden.save
-        format.html { redirect_to @garden, notice: 'Garden was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Garden was successfully created.' }
         format.json { render :show, status: :created, location: @garden }
       else
         format.html { render :new }
@@ -70,6 +70,6 @@ class GardensController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def garden_params
-      params[:garden]
+      params.require(:garden).permit(:name, :address, :city, :zip, :date_created)
     end
 end

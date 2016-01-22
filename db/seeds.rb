@@ -10,11 +10,15 @@ Plant.destroy_all
 User.destroy_all
 Garden.destroy_all
 
+
+
 plants = Plant.create(name_of_plant: "Test Plant")
 plants = Plant.create(name_of_plant: "Test Plant 2")
 
-gardens = Garden.create(name: "Metel's")
-40.times do |n|
+
+
+50.times do |n|
+
   first_name = Faker::Name.first_name
   last_name = Faker::Name.last_name
   city = Faker::Address.city
@@ -35,5 +39,25 @@ gardens = Garden.create(name: "Metel's")
   							username: username,
                 about_me: about_me,
                 avatar_url: avatar)
-
+  # user=User
+  # garden_name = Faker::Lorem.sentence
+  # 5.times do |n|
+  #   user.garden.create! (name: garden_name+"n")
+  # end
 end
+
+users = User.all
+users.each do |user|
+  garden_name = Faker::Lorem.word
+  5.times do |n|
+    user.gardens.create!(name: garden_name+"n", zip: "00000")
+  end
+end
+
+
+# users=Users.all
+# 5.times do
+#   name = Faker::Lorem.sentence
+#   users.each { |user| user.gardens.create!(name: name) }
+# end
+

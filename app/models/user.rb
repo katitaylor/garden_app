@@ -5,6 +5,7 @@
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   before_save { self.email = email.downcase }
+  has_many :gardens, dependent: :destroy
 
   # validates :first_name, length: { maximum: 50 }
   # validates :last_name, length: { maximum: 50 }
