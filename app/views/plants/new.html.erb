@@ -1,5 +1,42 @@
-<h1>New Plant</h1>
+<!-- <h1>New Plant</h1>
 
 <%= render 'form' %>
 
 <%= link_to 'Back', plants_path %>
+ -->
+
+<div class="column col-md-6 col-md-offset-3 form-div">
+
+    <div class="row col-md-12">
+      <div class="col-md-12 form-title">
+        <h2>Add A New Plant to your Garden</h2>
+      </div>
+    </div>
+
+    <div class="well col-md-12 form-well" id="new-plant-form">
+      <%= bootstrap_form_for(@plant) do |f| %>
+        <%= f.text_field :name_of_plant, label: "Name your new plant"%>
+        <%= f.text_field :date_planted, label: "Date planted in garden"%>
+        <div class="row col-md-12">
+          <div class="col-md-12 form-button" id="create-plant-button">
+            <%= f.submit "Create Plant" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+  </div>
+
+
+   <!-- create_table "plants", force: :cascade do |t|
+    t.integer  "plant_id"
+    t.string   "name_of_plant"
+    t.string   "date_planted"
+    t.string   "date_ended"
+    t.boolean  "plant_again?"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "garden_id"
+    t.integer  "plant_type_id"
+  end -->
+
