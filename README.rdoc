@@ -9,6 +9,10 @@ Things you may want to cover:
 
 https://drive.google.com/file/d/0B9VPtgc4eQJJZnJVNXVHSDF1YjA/view?usp=sharing
 
+* Link to wireframes:
+
+https://goo.gl/photos/ejVN23TsZvJDakzL8
+
 * Ruby version  ruby 2.2.3p173
 
 

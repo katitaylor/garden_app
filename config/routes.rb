@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: "registrations" }
   #Automatically add routes for users
+<<<<<<< HEAD
   resources :users, :plants, :gardens, :comments
+=======
+  resources :users, :plants, :gardens
+>>>>>>> ade2682c622dc4c38a82dbb99acd8d81e7673947
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

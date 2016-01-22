@@ -1,4 +1,5 @@
-@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,900,700,300,100);
 
 .navbar-default .navbar-nav>li>a {
   color:white;
@@ -7,7 +8,40 @@
 
 .navbar-default .navbar-nav>li>a:hover{
   color:#9D8420;
+}
 
+.log_in {
+  text-align: center;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif; font-weight: 400;
+}
+
+.container content_container .new_user {
+  text-decoration: none;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+  background-color: #64A857;
+}
+
+.btn-group-lg>.btn, .btn-lg:hover {
+  background-color:#9D8420;
+}
+
+.btn-group-lg>.btn, .btn-lg>a{
+  color:white;
+  border:5px;
+  text-decoration: none;
+}
+
+.dirty {
+  color:#9D8420;
+}
+
+.home_intro {
+  font-family: 'Roboto', sans-serif; font-weight: 700;
 }
 
 .content_title {
