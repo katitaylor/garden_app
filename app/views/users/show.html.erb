@@ -17,6 +17,20 @@
 	</div>
 </div>
 
+<div class="container">
+  <div class="col-md-8 col-md-offset-2">
+    <% if @user.gardens.any? %>
+      <h3>Gardens (<%= @user.microposts.count %>)</h3>
+      <ol class="gardens">
+        <%= render @gardens %>
+      </ol>
+      <%= will_paginate @gardens %>
+    <% end %>
+  </div>
+</div>
+
+
+
 <!--
 <div class="container">
   <div class="row">
