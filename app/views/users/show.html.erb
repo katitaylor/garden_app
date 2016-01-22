@@ -8,14 +8,15 @@
 			</div>
 		</div>
 		<div class="col-md-6">
-			<h1><%= current_user.first_name %>'s Gardens</h1>
+			<h1 class="body_title"><%= current_user.first_name %>'s Gardens</h1>
 			<p>About Me: <%= current_user.about_me %></p>
 		</div>
 		<div class="col-md-3">
-			<%= button_to "Create New Garden", new_garden_path, :form_class => "btn bth-primary btn-lg" %>
+		<button class="btn bth-primary btn-lg"><%= link_to "Create New Garden", new_garden_path %></button>
 		</div>
 	</div>
 </div>
+
 
 <!--
 <div class="container">

@@ -11,7 +11,6 @@ class PlantsController < ApplicationController
   # GET /plants/1.json
   def show
     @plant = Plant.find(params[:id])
-    @comments = Comment.find(5)
   end
 
   # GET /plants/new
