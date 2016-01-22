@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Gardens</h1>
+<h1 class="body_title">Your Gardens:</h1>
+
+<div class="col-md-offset-9 col-md-3">
+    <button class="btn bth-primary btn-lg"><%= link_to "Create New Garden", new_garden_path %></button>
+</div>
 
 <table>
   <thead>
@@ -22,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Garden', new_garden_path %>
+

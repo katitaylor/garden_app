@@ -22,7 +22,6 @@
           <% if user_signed_in? %>
             <li><%= link_to 'My Gardens', user_path(current_user.id) %>
             <li><%= link_to 'My Plants', plant_path(current_user.id) %></li>
-
           <% end %>
         </ul>
         <ul class="nav navbar-nav pull-right">
