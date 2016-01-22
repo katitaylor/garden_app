@@ -2,14 +2,9 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-3">
-			<div>
-				<%= image_tag(current_user.avatar_url, :id => "avatar") %>
-			</div>
-		</div>
 		<div class="col-md-6">
-			<h1><%= current_user.first_name %>'s Gardens</h1>
-			<p>About Me: <%= current_user.about_me %></p>
+			<h1><%= @user.first_name %>'s Gardens</h1>
+			<p>About Me: <%= @user.about_me %></p>
 		</div>
 		<div class="col-md-3">
 			<%= button_to "Create New Garden", new_garden_path, :form_class => "btn bth-primary btn-lg" %>
