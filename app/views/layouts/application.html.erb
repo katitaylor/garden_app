@@ -21,7 +21,7 @@
           <li><%= link_to 'Home', root_path %></li>
 
 
-          <li><%= link_to 'My Gardens', user_path(current_user.id) %></li>
+          <li><%= link_to 'My Gardens', 'user_path(current_user.id)' %></li>
           <li><%= link_to 'My Plants', 'plant_path(current_user.id)' %></li>
         </ul>
         <ul class="nav navbar-nav pull-right">

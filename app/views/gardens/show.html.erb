@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
-
 <%= link_to 'Edit', edit_garden_path(@garden) %>
 <%= link_to 'Back', gardens_path %>
+
+<h1 class="body_title">You are viewing <%= current_garden %></h1>
+
+<button class="btn bth-primary btn-lg"><%= link_to 'New Plant', new_plant_path %></button>
