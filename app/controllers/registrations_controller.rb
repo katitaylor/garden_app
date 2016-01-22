@@ -12,4 +12,3 @@ class RegistrationsController < Devise::RegistrationsController
     '/gardens' # Or :prefix_to_your_route
   end
 end
-
