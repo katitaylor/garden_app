@@ -1,43 +1,27 @@
-<div class="container content_title">
-  <div class="jumbotron">
-    <h1 class="title">Garden Geek</h1>
-  </div>
-</div>
-
-<!-- <div class="container content_container">
-  <span><button type="new_user"><%= link_to 'New User', new_user_path %></button></span>
-  <span><button type="login">Login</button>
-</div> -->
-
-<p id="notice"><%= notice %></p>
-
-<div class="log_in">
-<h2>Log in</h2>
-
-<%= bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+<div class="column col-md-6 col-md-offset-3 form-div">
+  <div class="row col-md-12">
+    <div class="col-md-12 form-title">
+      <h2>Sign up</h2>
     </div>
-  <% end -%>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
   </div>
-<% end %>
 
-<%= render "devise/shared/links" %>
 
+  <div class="well col-md-12 form-well log_in" id="new-user-form">
+    <h2>Log in</h2>
+
+    <%= bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <%= f.email_field :email, autofocus: true %>
+        <%= f.password_field :password, autocomplete: "off" %>
+      <% if devise_mapping.rememberable? -%>
+        <div class="field">
+          <%= f.label :remember_me %>
+        </div>
+      <% end -%>
+
+      <div class="actions">
+        <%= f.submit "Log in" %>
+      </div>
+    <% end %>
+
+  </div>
 </div>
-
