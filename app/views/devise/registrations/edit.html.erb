@@ -22,6 +22,10 @@
       <% end %><br />
       <%= f.password_field :password, autocomplete: "off" %>
       <%= f.password_field :password_confirmation, autocomplete: "off" %>
+      <div class="form-group">
+        <%= f.password_field :current_password, autocomplete: "off", class: 'form-control' %>
+        <span>we need your current password to confirm your changes</span>
+      </div>
 
     <div class="row col-md-12 actions">
       <div class="col-md-12 form-button" id="sign_up">
