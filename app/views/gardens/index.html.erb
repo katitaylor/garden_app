@@ -1,17 +1,22 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="body_title">Your Gardens:</h1>
-
-<div class="col-md-offset-9 col-md-3">
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div>
+        <%= image_tag(current_user.avatar_url, :id => "avatar") %>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h1 class="body_title"><%= current_user.first_name %>'s Gardens</h1>
+      <p>About Me: <%= current_user.about_me %></p>
+    </div>
+    <div class="col-md-3">
     <button class="btn bth-primary btn-lg"><%= link_to "Create New Garden", new_garden_path %></button>
+    </div>
+  </div>
 </div>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
   <tbody>
     <% @gardens.each do |garden| %>
