@@ -1,14 +1,10 @@
 == README
 
-Garden Geek :: Garden tracking application
+Garden Geek - Garden tracking application
 
-General Assembly :: WDI3 group project
+General Assembly - WDI3 group project
 
-Team members
-David Keathley
-Metel Patel
-Jessie Shanks
-Kati Taylor
+Team members: David Keathley, Metel Patel, Jessie Shanks, Kati Taylor
 
 Project: Garden Geek
 Purpose: An online journal tool for gardeners!
@@ -25,7 +21,7 @@ https://drive.google.com/file/d/0B9VPtgc4eQJJZnJVNXVHSDF1YjA/view?usp=sharing
 
 https://goo.gl/photos/ejVN23TsZvJDakzL8
 
-*Technical Requirements
+Technical Requirements
 
 The app must:
 
@@ -37,7 +33,7 @@ The app must:
 * Have semantically clean HTML and CSS
 * Be deployed online and accessible to the public
 
-* Necessary Deliverables
+Necessary Deliverables
 
 * A working full-stack application, built by you, hosted somewhere on the internet :: https://pacific-inlet-52173.herokuapp.com/
 * A link to your hosted working app in the URL section of your Github repo
@@ -46,23 +42,22 @@ The app must:
 * Wireframes and ERD's of your app, hosted somewhere & linked in your readme
 * A link in your readme.md to the publically-accessible user stories you created
 
-
 Technologies and approaches used in creation/implementation:
 
-Balsamic MockUps
-CSS
-Devise
-Draw.io
-GitHub
-Heroku
-HTML
-Slack
-coolers.com for palette
-Pivotal Tracker
+* Balsamic MockUps
+* CSS
+* Devise
+* Draw.io
+* GitHub
+* Heroku
+* HTML
+* Slack
+* coolers.com for palette
+* Pivotal Tracker
 
-* System dependencies
+System dependencies
 
-Ruby 2.2.3
+* Ruby 2.2.3
 
 
 

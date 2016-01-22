@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20160122083224) do
   add_index "gardens", ["user_id"], name: "index_gardens_on_user_id", using: :btree
 
   create_table "plants", force: :cascade do |t|
+    t.integer  "plant_id"
     t.string   "name_of_plant", null: false
     t.string   "date_planted"
     t.string   "date_ended"
@@ -42,8 +43,10 @@ ActiveRecord::Schema.define(version: 20160122083224) do
   end
 
   add_index "plants", ["garden_id"], name: "index_plants_on_garden_id", using: :btree
+  add_index "plants", ["plant_id"], name: "index_plants_on_plant_id", using: :btree
 
   create_table "users", force: :cascade do |t|
+    t.integer  "user_id"
     t.string   "first_name"
     t.string   "last_name"
     t.string   "address"
@@ -68,6 +71,7 @@ ActiveRecord::Schema.define(version: 20160122083224) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["user_id"], name: "index_users_on_user_id", using: :btree
 
   add_foreign_key "gardens", "users"
   add_foreign_key "plants", "gardens"
