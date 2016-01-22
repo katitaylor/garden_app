@@ -1,39 +1,9 @@
-<div class="column col-md-6 col-md-offset-3 form-div">
-
-   <div class="row col-md-12">
-     <div class="col-md-12 form-title">
-       <h2>Add A New Plant to your Garden</h2>
-     </div>
-   </div>
-
-   <div class="well col-md-12 form-well" id="new-plant-form">
-     <%= bootstrap_form_for(@plant) do |f| %>
-       <%= f.text_field :name_of_plant, label: "Name your new plant"%>
-       <%= f.text_field :date_planted, label: "Date planted in garden"%>
-       <div class="row col-md-12">
-         <div class="col-md-12 form-button" id="create-plant-button">
-           <%= f.submit "Create Plant" %>
-         </div>
-       </div>
-     <% end %>
-   </div>
-
- </div>
-
-<!--<%= form_for(@plant) do |f| %>
-  <% if @plant.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@plant.errors.count, "error") %> prohibited this plant from being saved:</h2>
-
-      <ul>
-      <% @plant.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+<%= bootstrap_form_for(@plant) do |f| %>
+  <%= f.text_field :name_of_plant, label: "Name your new plant"%>
+  <%= f.text_field :date_planted, label: "Date planted" %>
+  <div class="row col-md-12">
+    <div class="col-md-12 form-button" id="create-plant-button">
+      <%= f.submit "Create plant" %>
     </div>
-  <% end %>
-
-  <div class="actions">
-    <%= f.submit %>
   </div>
-<% end %> -->
+<% end %>

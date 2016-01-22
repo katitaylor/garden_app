@@ -29,7 +29,7 @@ class GardensController < ApplicationController
 
     respond_to do |format|
       if @garden.save
-        format.html { redirect_to root_path, notice: 'Garden was successfully created.' }
+        format.html { redirect_to gardens_path, notice: 'Garden was successfully created.' }
         format.json { render :show, status: :created, location: @garden }
       else
         format.html { render :new }
