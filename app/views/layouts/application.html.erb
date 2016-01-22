@@ -19,7 +19,11 @@
       <div id="navbar">
         <ul class="nav navbar-nav">
           <li><%= link_to 'Home', root_path %></li>
-  <!-- This text was here in those bracket-percent-equals tags and in <li> tags: <li> link_to 'My Gardens', user_path(current_user.id) %>< link_to 'My Plants', plant_path(current_user.id) %></li> -->
+          <% if user_signed_in? %>
+            <li><%= link_to 'My Gardens', user_path(current_user.id) %>
+            <li><%= link_to 'My Plants', plant_path(current_user.id) %></li>
+
+          <% end %>
         </ul>
         <ul class="nav navbar-nav pull-right">
           <% if user_signed_in? %>

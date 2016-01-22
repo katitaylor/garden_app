@@ -1,14 +1,4 @@
-<!--
-<%= render 'form' %>
-
-<%= link_to 'Back', gardens_path %>
--->
-
-
-
-
   <div class="column col-md-6 col-md-offset-3 form-div">
-
     <div class="row col-md-12">
       <div class="col-md-12 form-title">
         <h2>Add A New Garden</h2>
@@ -16,17 +6,6 @@
     </div>
 
     <div class="well col-md-12 form-well" id="new-garden-form">
-      <%= bootstrap_form_for(@garden) do |f| %>
-        <%= f.text_field :name, label: "Name your new garden"%>
-        <%= f.text_field :address, label: "Address where garden is located" %>
-        <%= f.text_field :city, label: "City where garden is located" %>
-        <%= f.number_field :zip, label: "Zip where garden is located" %>
-        <%= f.text_field :date_started, label: "Garden start date" %>
-        <div class="row col-md-12">
-          <div class="col-md-12 form-button" id="create-garden-button">
-            <%= f.submit "Create Garden" %>
-          </div>
-        </div>
-      <% end %>
+      <%= render 'form' %>
     </div>
   </div>
