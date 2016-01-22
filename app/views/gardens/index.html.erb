@@ -15,16 +15,19 @@
   </div>
 </div>
 
-
+<div class="col-md-offset-5">
   <tbody>
     <% @gardens.each do |garden| %>
+    <ul>
       <tr>
-        <td><%= link_to 'Show', garden %></td>
-        <td><%= link_to 'Edit', edit_garden_path(garden) %></td>
-        <td><%= link_to 'Destroy', garden, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <li><%= link_to 'Show', garden %></td>
+        <%= link_to 'Edit', edit_garden_path(garden) %></td>
+        <%= link_to 'Destroy', garden, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+      </ul>
     <% end %>
   </tbody>
+  </div>
 </table>
 
 <br>
