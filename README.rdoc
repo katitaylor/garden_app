@@ -44,13 +44,15 @@ Necessary Deliverables
 
 Technologies and approaches used in creation/implementation:
 
-* Balsamic MockUps
+* Ruby on Rails
+* Express
 * CSS
+* HTML
 * Devise
-* Draw.io
 * GitHub
 * Heroku
-* HTML
+* Draw.io
+* Balsamic MockUps
 * Slack
 * coolers.com for palette
 * Pivotal Tracker
