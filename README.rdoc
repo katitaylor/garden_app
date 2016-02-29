@@ -45,7 +45,6 @@ Necessary Deliverables
 Technologies and approaches used in creation/implementation:
 
 * Ruby on Rails
-* Express
 * CSS
 * HTML
 * Devise
